@@ -6,64 +6,81 @@
 html {
     font-size: 62.5%;
     background-color: black;
+    min-width: 270px;
 }
 
 /* ### HEADER ### */
 
 header h1, h2, h3{
     color: white;
-    margin: 5px;
+    margin: 10px;
 }
 header h1 {
-    font-size: 3.6rem;
+    font-size: 4rem;
 }
 header h2 {
-    font-size: 2.4rem;
+    font-size: 3rem;
     color: blueviolet;
 }
 header h3 {
-    font-size: 1.87rem;
+    font-size: 2rem;
 }
-header figure {
-    display: none;
+
+.personal-info {
+    padding: 8px;
 }
-.header-div {
-    width: 98vw;
-    height: 2px;
-    margin: 10px auto 0;
+.personal-info .about {
+    border-radius: 10px;
     background-color: blueviolet;
+    padding: 5px;
+    font-size: 1.6rem;
+}
+.personal-info .contact {
+    display: none;
 }
 
 /* ### MAIN ### */
 
 /* # PROJECTS # */
+.projects-title {
+    font-size: 2.4rem;
+}
 .project-box {
     background-color: white;
     font-size: 1.6rem;
     border: 1px solid black;
-    border-radius: 3px;
+    border-radius: 10px;
     margin: 4px;
     padding: 5px;
-    width: calc(100vw - 8px);
-}
-.project-box h3 > a {
-    text-decoration: none;
-    color: black;
 }
 .project-box__title {
     color: black;
     padding: 5px;
 }
-.project-box figure img {
-    width: 25vw;
-}
 .project-box__content {
     display: flex;
 }
-.project-box__content__desc {
-    /* background-color: rgb(194, 25, 186);
-    color: black; */
+.project-box__content__img img {
+    width: 25vw;
+}
+.project-box__content__tech {
+    display: none;
+}
+.project-box__content__description {
     margin: auto 1px;
     padding: 2px;
     border-radius: 5px;
+}
+.project-box__content__description a {
+    text-decoration: none;
+    color: black;
+    background-color: blueviolet;
+    margin: 3px;
+    padding: 3px;
+    border: 1px solid;
+    border-radius: 8px;
+}
+.project-box__content__description a:hover {
+    background-color: orange;
+    cursor: pointer;
 }
